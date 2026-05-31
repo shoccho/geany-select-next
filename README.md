@@ -34,29 +34,6 @@ pkg-config --cflags geany
 pkg-config --libs geany
 ```
 
-## Project layout
-
-```text
-.
-├── Makefile
-├── README.md
-├── selectnext.c        # Geany plugin entry point and keybinding registration
-├── sn_editor.c         # Thin Scintilla/Geany editor wrapper
-├── sn_editor.h
-├── sn_occurrence.c     # Plugin command behavior
-├── sn_occurrence.h
-├── sn_search.c         # Pure occurrence-search logic
-├── sn_search.h
-```
-
-Generated files go here:
-
-```text
-build/
-├── obj/
-└── selectnext.so
-```
-
 ## Build
 
 ```sh
@@ -216,4 +193,4 @@ This is a small personal plugin. It is meant to be understandable C code, not a 
 
 ## License
 
-MIT License is recommended, but no license file is included yet. Add one before publishing publicly if you want others to reuse the code.
+MIT License. See [LICENSE](LICENSE).
